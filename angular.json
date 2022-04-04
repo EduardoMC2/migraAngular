@@ -28,13 +28,13 @@
             ],
             "styles": [
               "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font.min.css",
               "src/styles.css"
             ],
             "scripts": [
               "src/assets/js/modal.js",
-              "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/@popperjs/core/dist/umd/popper.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "src/assets/js/bootstrap.bundle.min.js"
+              
             ]
           },
           "configurations": {
@@ -100,9 +100,15 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/modal.js",
+              "src/assets/js/bootstrap.bundle.min.js"
+              
+            ]
           }
         }
       }

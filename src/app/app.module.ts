@@ -28,7 +28,8 @@ import { ModalComponent } from './modal/modal.component';
     ModalComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
