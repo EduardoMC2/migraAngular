@@ -12,6 +12,7 @@ import { ProyectosComponent } from './componentes/proyectos/proyectos.component'
 import { ContactosComponent } from './componentes/contactos/contactos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
+import { HttpClientModule} from  '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ModalComponent } from './modal/modal.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule
     
   ],
   providers: [],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataPortfolioService } from 'src/app/servicios/data-portfolio.service';
 
 @Component({
   selector: 'app-presentacion',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentacionComponent implements OnInit {
 
-  constructor() { }
+  constructor(private data: DataPortfolioService) { }
 
   ngOnInit(): void {
+    this.data.obtenerDatos();
   }
 
 }
