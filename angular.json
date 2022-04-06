@@ -35,6 +35,8 @@
               "src/assets/js/modal.js",
               "src/assets/js/bootstrap.bundle.min.js"
               
+
+              
             ]
           },
           "configurations": {
@@ -107,6 +109,8 @@
             "scripts": [
               "src/assets/js/modal.js",
               "src/assets/js/bootstrap.bundle.min.js"
+              
+
               
             ]
           }
