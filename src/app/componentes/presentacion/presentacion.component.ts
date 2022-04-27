@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataPortfolioService } from 'src/app/servicios/data-portfolio.service';
+import { observable } from 'rxjs';
+import { PorfolioService } from 'src/app/servicios/porfolio.service';
 
 @Component({
   selector: 'app-presentacion',
@@ -7,11 +8,13 @@ import { DataPortfolioService } from 'src/app/servicios/data-portfolio.service';
   styleUrls: ['./presentacion.component.css']
 })
 export class PresentacionComponent implements OnInit {
-
-  constructor(private data: DataPortfolioService) { }
+  miPorfolio: any;
+  constructor(private datosPorfolio: PorfolioService) { }
 
   ngOnInit(): void {
-    this.data.obtenerDatos();
+   this.datosPorfolio.obtenerDatos().subscribe(data=>{console.log(data);
+  this.miPorfolio=data
+  });
   }
 
 }

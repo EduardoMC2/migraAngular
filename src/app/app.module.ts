@@ -11,8 +11,9 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { ContactosComponent } from './componentes/contactos/contactos.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { ModalComponent } from './modal/modal.component';
-import { HttpClientModule} from  '@angular/common/http'
+import { HttpClientModule} from  '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -26,11 +27,11 @@ import { HttpClientModule} from  '@angular/common/http'
     ProyectosComponent,
     ContactosComponent,
     FooterComponent,
-    ModalComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
     
   ],
   providers: [],
